@@ -13,11 +13,16 @@ body {
     padding: 0 20px;
 }
 
+/* Box Style for Sections */
+.box {
+    padding: 30px;
+}
+
 /* Hero Section */
 .hero {
-    background: url('https://images.pexels.com/photos/31106309/pexels-photo-31106309/free-photo-of-vibrant-red-flowers-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center/cover;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)), url('https://www.umzugsfirma-stark.de/wp-content/uploads/2025/03/Stark-Umzuege-Berlin-–-Ihr-Umzug-unsere-Mission.webp') no-repeat center/cover;
     background-size: cover;
-    color: white;
+    color: #005884;
     padding: 100px 0;
     position: relative;
     width: 100%;
@@ -38,6 +43,32 @@ body {
     margin-bottom: 30px;
 }
 
+.hero .feature-list {
+    list-style: disc;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.hero .feature-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.hero .feature-list .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #2a5298;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
 .hero .btn {
     background: #2a5298;
     color: white;
@@ -46,49 +77,60 @@ body {
     border-radius: 5px;
 }
 
+/* ADVANCE CSS */
+
+.hero-content ul {
+    padding-left: 14px;
+    margin: 20px 0;
+}
+
+.hero-content ul li {
+    margin: 14px 0;
+}
+
 /* About Section */
 .about {
     padding: 50px 0;
     background: #f9f9f9;
-}
-
-.about .container {
+    }
+    
+    .about .container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.about img {
+    }
+    
+    .about img {
     width: 40%;
     margin-right: 20px;
-}
-
-.about-content {
+    }
+    
+    .about-content {
     flex: 1;
-}
-
-.about-content h2 {
+    }
+    
+    .about-content h2 {
     color: #2a5298;
     font-size: 36px;
-}
-
-.about-content p {
+    }
+    
+    .about-content p {
     font-size: 16px;
     margin: 20px 0;
-}
-
-.about-content ul {
+    }
+    
+    .about-content ul {
     list-style: disc;
     padding-left: 20px;
-}
-
-.about-content .btn {
+    }
+    
+    .about-content .btn {
     background: #2a5298;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-}
+    }
 
 /* Services Section */
 .services {
@@ -99,6 +141,11 @@ body {
 .services h2 {
     color: #2a5298;
     font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
@@ -118,6 +165,7 @@ body {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 .service-item h3 {
@@ -129,28 +177,21 @@ body {
     font-size: 14px;
 }
 
-/* Projects Section */
-.projects {
+/* Special Umzüge Section */
+.special-umzuege {
     padding: 50px 0;
     text-align: center;
 }
 
-.projects h2 {
+.special-umzuege h2 {
     color: #2a5298;
     font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.special-umzuege p {
+    font-size: 16px;
     margin-bottom: 40px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.project-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
 }
 
 /* Contact Section */
@@ -180,6 +221,11 @@ body {
     margin-bottom: 20px;
 }
 
+.contact form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 .contact form input,
 .contact form select,
 .contact form textarea {
@@ -201,30 +247,7 @@ body {
 
 .contact img {
     width: 30%;
-}
-
-/* Team Section */
-.team {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.team h2 {
-    color: #2a5298;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.team-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 12px;
 }
 
 /* Tab Content Section */
@@ -267,6 +290,7 @@ body {
 
 .tab-panel img {
     width: 40%;
+    border-radius: 12px;
 }
 
 .tab-panel-content {
@@ -284,44 +308,75 @@ body {
     padding-left: 20px;
 }
 
-/* Testimonials Section */
-.testimonials {
+/* Pricing Section */
+.pricing {
     padding: 50px 0;
     text-align: center;
 }
 
-.testimonials h2 {
+.pricing h2 {
     color: #2a5298;
     font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing p {
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
-.testimonial-grid {
+.pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.testimonial-item {
+.pricing-item {
     background: white;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.testimonial-item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.pricing-item h3 {
+    font-size: 20px;
+    margin: 15px 0;
 }
 
-.testimonial-item p {
+.pricing-item p {
     font-size: 14px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faq h2 {
+    color: #2a5298;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faq-item {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.testimonial-item h4 {
-    font-size: 16px;
+.faq-item p {
+    font-size: 14px;
 }
 
 /* Call to Action */
@@ -331,50 +386,6 @@ body {
     padding: 30px 0;
     font-size: 24px;
     color: #2a5298;
-}
-
-/* Blog Section */
-.blog {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.blog h2 {
-    color: #2a5298;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.blog-item {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.blog-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.blog-item h3 {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-.blog-item p {
-    font-size: 14px;
-}
-
-.blog-item a {
-    color: #2a5298;
-    text-decoration: none;
 }
 
 /* Responsive Design */
@@ -399,10 +410,8 @@ body {
     }
 
     .service-grid,
-    .project-grid,
-    .team-grid,
-    .testimonial-grid,
-    .blog-grid {
+    .pricing-grid,
+    .faq-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -444,24 +453,32 @@ body {
         text-align: center;
     }
 
+    .hero .feature-list li {
+        font-size: 14px;
+    }
+
+    .hero .feature-list .icon {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
     .about-content h2 {
         font-size: 28px;
     }
 
     .services h2,
-    .projects h2,
-    .team h2,
+    .special-umzuege h2,
     .tab-content h2,
-    .testimonials h2,
-    .blog h2 {
+    .pricing h2,
+    .faq h2 {
         font-size: 28px;
     }
 
     .service-grid,
-    .project-grid,
-    .team-grid,
-    .testimonial-grid,
-    .blog-grid {
+    .pricing-grid,
+    .faq-grid {
         grid-template-columns: 1fr;
     }
 
@@ -481,47 +498,63 @@ body {
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 28px;
+        line-height: 38px;
     }
 
     .hero p {
         font-size: 14px;
+        line-height: 24px;
     }
 
     .hero .btn {
         padding: 8px 16px;
     }
 
+    .hero .feature-list li {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .hero .feature-list .icon {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+
     .about-content h2 {
         font-size: 24px;
+line-height: 34px;
     }
 
     .services h2,
-    .projects h2,
-    .team h2,
+    .special-umzuege h2,
     .tab-content h2,
-    .testimonials h2,
-    .blog h2 {
+    .pricing h2,
+    .faq h2 {
         font-size: 24px;
+        line-height: 34px;
     }
 
     .service-item h3,
-    .blog-item h3 {
+    .pricing-item h3,
+    .faq-item h3 {
         font-size: 18px;
+        line-height: 28px;
     }
 
     .contact form h2 {
         font-size: 20px;
+        line-height: 30px;
     }
 
     .tab-panel-content h3 {
         font-size: 20px;
-    }
-
-    .testimonial-item h4 {
-        font-size: 14px;
+        line-height: 30px;
     }
 
     .cta {
         font-size: 18px;
+        line-height: 28px;
     }
 }
