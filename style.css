@@ -5,6 +5,8 @@
     display: revert;
 }
 
+/* ALL BUTTON CSS START FROM HERE  */
+
 .btn-main-section {
     margin-top: 38px !important;
 }
@@ -17,7 +19,15 @@
     border-radius: 5px;
 }
 
+a.btn {
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+a.btn:hover{
+    background: #42ABC7;
+}
 
+/* ALL BUTTON CSS ENDS HERE  */
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -375,6 +385,103 @@ body p{
 .pricing-item p {
     font-size: 14px;
 }
+/* Show More Section */
+.show-more {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.show-more h2 {
+    color: #2a5298;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.show-more p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.more-content {
+    display: none; /* Hidden by default */
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.more-content.show {
+    display: block; /* Shown when toggled */
+}
+
+.more-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.more-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.more-content li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.toggle-btn {
+    background: #2a5298;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-btn:hover {
+    background: #1e3c72;
+}
+
+/* Responsive Design for Show More Section */
+@media (max-width: 768px) {
+    .show-more h2 {
+        font-size: 28px;
+    }
+
+    .more-content h3 {
+        font-size: 20px;
+    }
+
+    .more-content li {
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .show-more h2 {
+        font-size: 24px;
+    }
+
+    .more-content h3 {
+        font-size: 18px;
+    }
+
+    .more-content li {
+        font-size: 12px;
+    }
+
+    .toggle-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
 
 /* FAQ Section */
 .faq {
