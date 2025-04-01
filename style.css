@@ -202,22 +202,31 @@ body p {
 }
 
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    column-gap: 20px;
+    flex-wrap: wrap;
+    /* min-width: 362px; */
+    row-gap: 60px;
 }
 
 .service-item {
-  background: white;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    /* padding: 20px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 350px;
+    flex: 1;
 }
 
 .service-item img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 12px;
+  /* border-radius: 12px; */
+}
+
+.service-grid .service-item:nth-last-child(2) img, .service-grid .service-item:nth-last-child(1) img { 
+    height: 350px !important;
 }
 
 .service-item h3 {
