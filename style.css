@@ -1,3 +1,23 @@
+/* ADVANCE CSS  */
+
+* {
+    all: unset;
+    display: revert;
+}
+
+.btn-main-section {
+    margin-top: 38px !important;
+}
+
+.btn {
+    background: #2a5298;
+    color: white;
+    padding: 16px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -74,13 +94,13 @@ body p{
     font-size: 14px;
 }
 
-.hero .btn {
+/* .hero .btn {
     background: #2a5298;
     color: white;
-    padding: 10px 20px;
+    padding: 16px 18px;
     text-decoration: none;
     border-radius: 5px;
-}
+} */
 
 /* ADVANCE CSS */
 
@@ -134,13 +154,13 @@ body p{
     padding-left: 20px;
     }
     
-    .about-content .btn {
+    /* .about-content .btn {
     background: #2a5298;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    }
+    } */
 
 /* Services Section */
 .services {
