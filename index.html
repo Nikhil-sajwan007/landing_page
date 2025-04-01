@@ -251,5 +251,20 @@
         </div>
     </div>
 </section>
+
+<script>
+    function toggleContent() {
+    const content = document.getElementById('moreContent');
+    const button = document.getElementById('toggleBtn');
+    
+    if (content.classList.contains('show')) {
+        content.classList.remove('show');
+        button.textContent = 'Mehr anzeigen';
+    } else {
+        content.classList.add('show');
+        button.textContent = 'Weniger anzeigen';
+    }
+}
+</script>
 </body>
 </html>
