@@ -216,13 +216,18 @@ body p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-width: 350px;
     flex: 1;
+    border-radius: 12px;
+}
+.service-item-content {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .service-item img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  /* border-radius: 12px; */
+  border-radius: 12px 12px 0 0;
 }
 
 .service-grid .service-item:nth-last-child(2) img, .service-grid .service-item:nth-last-child(1) img { 
