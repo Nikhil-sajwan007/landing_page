@@ -48,8 +48,8 @@ body {
 }
 
 body p {
-  font-size: 18px !important;
-  line-height: 28px !important;
+  font-size: 17px !important;
+  line-height: 27px !important;
   margin: 20px 0;
   font-weight: 400;
 }
@@ -819,3 +819,81 @@ body p {
   }
 
   /* NEW TEXT MEDIA SECTION ENDS HERE  */
+
+
+  /* NEW TEXT ONLY SECTION CSS START FROM HERE  */
+
+.text-container {
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.text-container .inner-container {
+  max-width: 1362px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* List specific structure - only basic spacing */
+.text-container ul {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.text-container ul li {
+  margin-bottom: 12px;
+}
+
+.text-container ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Button container spacing only */
+.text-container .btn-main-section {
+  margin-top: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1400px) {
+  .text-container .inner-container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-container .inner-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-container {
+    padding: 50px 20px;
+  }
+  
+  .text-container .inner-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    padding: 40px 15px;
+  }
+  
+  .text-container .inner-container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-container {
+    padding: 30px 15px;
+  }
+  
+  .text-container .inner-container {
+    max-width: 100%;
+  }
+}
+  /* NEW TEXT ONLY SECTION CSS ENDS HERE  */
